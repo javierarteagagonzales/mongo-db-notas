@@ -141,3 +141,26 @@ incluye documentos que no contienen el campo.
  - long   = 64-bit integer
  - string = String
 ```
+
+* 💲and 💲or 💲nor 💲not
+```
+ $or 
+ Une las cláusulas con un OR lógico 
+   
+   { $or: [ { selector1 }, { selector2 }, ... ] }
+
+ • $nor 
+ Une cláusulas de consulta con un NOR lógico 
+ 
+   { $nor: [ { selector1 }, { selector2 }, ... ] }
+
+ • $and 
+ Une cláusulas de consulta con un AND lógico 
+
+   { $and: [ { selector1 }, { selector2 }, ... ] }
+
+ • $not 
+ Invierte el efecto de una expresión de consulta.
+
+   { campo: { $not: { selector } } }
+```
