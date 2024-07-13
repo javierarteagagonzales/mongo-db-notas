@@ -121,3 +121,23 @@ incluye documentos que no contienen el campo.
 
  • $nin
 ``` 
+
+* Elementos 💲exists 💲type
+```
+
+ • $exists  -  { field: { $exists: boolean } }
+
+   - true :  documentos que contienen el campo (null)
+   - false:  documentos que no contienen el campo 
+
+ { title : "The Martian" }
+
+ 
+ • $type    -  { field: { $type: BSON type } }
+   -video.movies
+
+ - double = Double
+ - int    = 32-bit integer
+ - long   = 64-bit integer
+ - string = String
+```
