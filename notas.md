@@ -96,4 +96,28 @@ mongo "mongodb+srv://[SUSTITUYE].mongodb.net/test" -u m001-student -p password
   use videoRedesPlus
   
   db.pelisBasura.find().pretty()
-  ``` 
+``` 
+
+## Operadores de consultas
+
+* Comparación
+``` 
+
+ • $eq  -  { field: { $eq: value } }
+
+ Equivalente a { field: value }
+
+ • $ne
+incluye documentos que no contienen el campo.
+
+ • $gt  -  {field: {$gt: value} }
+ • $gte
+ • $lt
+ • $lte
+
+
+ • $in
+{ field: { $in: [value1, value2, ... valueN ] } }
+
+ • $nin
+``` 
