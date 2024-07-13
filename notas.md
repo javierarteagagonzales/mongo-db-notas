@@ -164,3 +164,32 @@ incluye documentos que no contienen el campo.
 
    { campo: { $not: { selector } } }
 ```
+
+* Operadores para Vectores 💲all💲size💲elemMatch
+```
+
+ • $all 
+
+ Solo Documentos que contienen el campo vector con todos los valores
+   { campo: {$all: [valor1, valor2, ...] } }
+
+   - Pueden tener más valores, nunca menos
+   - No tienen que estar en el mismo orden
+ 
+
+ • $size
+
+  Solo Documentos que contienen el campo vector con el tamaño indicado.
+ 
+ { campo: { $size: 2 } } )
+ 
+   - no acepta rangos de valores. 
+
+
+
+ • $elemMatch
+ 
+  Solo Documentos que contienen un elemento del campo vector que coincide con todas las condiciones especificadas 
+
+   { campo: { $elemMatch: { selector1 , selector2 , ... } } }
+```
