@@ -66,11 +66,6 @@ db.nombColec.deleteMany(filter,options)
 
 https://docs.mongodb.com/manual/refer...
 
- 
-Cluster: REDES PLUS
-   -videoRedesPlus.pelisBasura
-
-
 use videoRedesPlus
 db.pelisBasura.find()
 //DELETE ONE
@@ -85,3 +80,20 @@ db.pelisBasura.deleteOne ( {director: "Quentin Tarantino"} )
 db.pelisBasura.deleteOne ( {year: {$gt:2000}} )
 db.pelisBasura.deleteMany( {year: {$gt:2000}} )
 ``` 
+
+*  CARGAR UN FICHERO .js DESDE LA CONSOLA
+
+``` 
+mongo "mongodb+srv://[SUSTITUYE].mongodb.net/test" --username m001-student  nombreArchivo.js
+   -u = --username 
+   -p = --password
+
+mongo "mongodb+srv://[SUSTITUYE].mongodb.net/test" -u m001-student -p password
+ 
+  Cluster: REDES PLUS
+   -videoRedesPlus.pelisBasura
+
+  use videoRedesPlus
+  
+  db.pelisBasura.find().pretty()
+  ``` 
