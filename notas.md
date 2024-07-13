@@ -57,3 +57,31 @@ db.pelisBasura.replaceOne(
   "cast": ["Jamie Foxx","Christoph Waltz","Leonardo  DiCaprio","Kerry Washington"]
  })
 ``` 
+
+* deleteOne y deleteMany
+
+``` 
+db.nombColec.deleteOne (filter,options)
+db.nombColec.deleteMany(filter,options)
+
+https://docs.mongodb.com/manual/refer...
+
+ 
+Cluster: REDES PLUS
+   -videoRedesPlus.pelisBasura
+
+
+use videoRedesPlus
+db.pelisBasura.find()
+//DELETE ONE
+db.pelisBasura.deleteOne( {_id: "tt0110912" } )
+db.pelisBasura.deleteOne( {title: "Django Unchained" } )
+
+//DELETE MANY
+db.pelisBasura.deleteMany( {director: "Quentin Tarantino"} )
+db.pelisBasura.deleteOne ( {director: "Quentin Tarantino"} )
+
+//
+db.pelisBasura.deleteOne ( {year: {$gt:2000}} )
+db.pelisBasura.deleteMany( {year: {$gt:2000}} )
+``` 
