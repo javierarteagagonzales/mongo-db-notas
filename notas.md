@@ -193,3 +193,17 @@ incluye documentos que no contienen el campo.
 
    { campo: { $elemMatch: { selector1 , selector2 , ... } } }
 ```
+
+* Operador 💲regex
+```
+
+ • $regex 
+
+  {campo: { $regex: /pattern/ options } }
+   
+
+   / / para delimitar la expresión regular
+   ^   significa comenzar desde el principio 
+   .   comodín (cualquier carácter) 
+   *   cualquier carácter varias veces
+```
