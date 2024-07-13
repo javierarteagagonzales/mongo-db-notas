@@ -29,3 +29,31 @@ db.pelisBasura.updateOne (
   "director":"Quentin Tarantino"  
   }
 ``` 
+
+* ReplaceOne
+``` 
+ REPLACEONE
+
+db.nombColec.replaceOne(filter,replacement,options)
+
+https://docs.mongodb.com/manual/refer...
+
+  replacement: 
+ -no puede contener operadores de actualización
+
+Cluster: REDES PLUS
+   -videoRedesPlus.pelisBasura
+
+ updateOne vs replaceOne
+
+
+db.pelisBasura.find()
+
+db.pelisBasura.replaceOne(
+ {title: "Django Unchained"}, 
+ {
+  "title":"Django Unchained",
+  "director":"Quentin Tarantino",
+  "cast": ["Jamie Foxx","Christoph Waltz","Leonardo  DiCaprio","Kerry Washington"]
+ })
+``` 
