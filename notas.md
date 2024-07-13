@@ -10,3 +10,22 @@ db.movieDetails.updateMany (
   }
  })
 ``` 
+
+* UPSERTS
+``` 
+ UPSERTS = UPdate + inSERTS
+
+ 
+Cluster: 
+   -videoRedesPlus.pelisBasura
+
+db.pelisBasura.find()
+
+db.pelisBasura.updateOne ( 
+ {_id: "tt0110913"} , 
+ {$set: { 
+  "title":"Pulp Fiction",
+  "year":1994,  
+  "director":"Quentin Tarantino"  
+  }
+``` 
