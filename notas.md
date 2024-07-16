@@ -1,3 +1,6 @@
+
+# Mongo DB Notas
+
 * Método update many
 ``` 
 db.movieDetails.find({rated: null})
