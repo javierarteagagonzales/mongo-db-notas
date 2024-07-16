@@ -1,6 +1,8 @@
 
 # Mongo DB Notas
 
+Notas Usando Studio 3T
+
 * Método update many
 ``` 
 db.movieDetails.find({rated: null})
