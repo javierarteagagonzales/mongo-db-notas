@@ -3,6 +3,8 @@
 
 Notas Usando Studio 3T
 
+Se presenta distintos comandos para Mongo DB
+
 * Método update many
 ``` 
 db.movieDetails.find({rated: null})
